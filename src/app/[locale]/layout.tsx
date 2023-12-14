@@ -1,4 +1,3 @@
-import { Inter } from "next/font/google";
 import { notFound } from "next/navigation";
 import { getTranslations, unstable_setRequestLocale } from "next-intl/server";
 import { ReactNode } from "react";
@@ -7,9 +6,8 @@ import "../globals.css";
 
 import Providers from "./Providers";
 import Navigation from "@/components/Navigation/Navigation";
-import PageLayout from "@/components/PageLayout/PageLayout";
 
-const inter = Inter({ subsets: ["latin"] });
+import styles from "./style.module.css";
 
 type Props = {
   children: ReactNode;
@@ -41,14 +39,14 @@ export default async function LocaleLayout({
   unstable_setRequestLocale(locale);
 
   return (
-    <html lang={locale}>
-      <body>
+    <html lang={locale}
+    className={styles.h_full}
+    >
+      <body className={styles.containerLogin}>
         <Providers>
-        <Navigation />
-          <PageLayout>
+          <Navigation />
           {children}
-          </PageLayout>
-          </Providers>
+        </Providers>
       </body>
     </html>
   );

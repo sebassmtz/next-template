@@ -1,10 +1,8 @@
 import { notFound } from "next/navigation";
 import { useTranslations } from "next-intl";
 import { unstable_setRequestLocale } from "next-intl/server";
-// import PageLayout from '@/components/PageLayout';
 import { locales } from "../../i18n-config";
-import ThemeSwitcherSelect from "@/components/ThemeSwitcher/ThemeSwitcherSelect";
-import LocaleSwitcher from "@/components/LocaleSwitcher/LocaleSwitcher";
+import PageLayout from "@/components/PageLayout/PageLayout";
 
 type Props = {
   params: { locale: string };
@@ -21,13 +19,12 @@ export default function IndexPage({ params: { locale } }: Props) {
   const t = useTranslations("IndexPage");
 
   return (
-    <div>
-      <ThemeSwitcherSelect />
+    <PageLayout>
       <p>
         {t.rich("description", {
           code: (chunks) => <code>{chunks}</code>,
         })}
       </p>
-    </div>
+    </PageLayout>
   );
 }

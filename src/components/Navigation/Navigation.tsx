@@ -6,7 +6,6 @@ import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
 
 import styles from "./style.module.css";
 
-
 export default function Navigation() {
   const t = useTranslations("Navigation");
 
@@ -17,8 +16,10 @@ export default function Navigation() {
           <NavigationLink href="/">{t("home")}</NavigationLink>
           <NavigationLink href="/path">{t("path")}</NavigationLink>
         </div>
-        <LocaleSwitcher />
-        <ThemeSwitcher />
+        <div >
+          <LocaleSwitcher />
+          <ThemeSwitcher />
+        </div>
       </nav>
     </div>
   );

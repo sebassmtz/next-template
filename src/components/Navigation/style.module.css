@@ -1,8 +1,15 @@
 .container {
+  padding: auto;
+  margin: 10px 20px;
   background-color: var(--background);
 }
 
 .navigation {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -19,4 +26,10 @@
 
 .link:hover {
   color: var(--text-secondary);
+}
+
+@media (min-width: 640px) {
+  .navigation {
+    max-width: 50rem; 
+  }
 }
