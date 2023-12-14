@@ -3,6 +3,8 @@
 import { ChangeEvent, ReactNode, useTransition } from "react";
 import { useRouter, usePathname } from "../../i18n-navigation";
 
+import styles from "./styles.module.css";
+
 type Props = {
   children: ReactNode;
   defaultValue: string;
@@ -26,16 +28,17 @@ export default function LocaleSwitcherSelect({
   }
 
   return (
-    <label>
-      <p>{label}</p>
+    <label className={`${styles.label} ${isPending ? styles.disabled : ''}`}>
+      <p className={styles.visuallyhidden}>{label}</p>
       <select
+        className={styles.customInput}
         defaultValue={defaultValue}
         disabled={isPending}
         onChange={onSelectChange}
       >
         {children}
       </select>
-      <span></span>
+      <span className={styles.dropdownIcon}></span>
     </label>
   );
 }

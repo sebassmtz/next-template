@@ -1,19 +1,24 @@
 import { useTranslations } from "next-intl";
-import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
 import NavigationLink from "./NavigationLink";
+
+import LocaleSwitcher from "../LocaleSwitcher/LocaleSwitcher";
+import ThemeSwitcher from "../ThemeSwitcher/ThemeSwitcher";
+
+import styles from "./style.module.css";
 
 
 export default function Navigation() {
   const t = useTranslations("Navigation");
 
   return (
-    <div>
-      <nav>
+    <div className={styles.container}>
+      <nav className={styles.navigation}>
         <div>
           <NavigationLink href="/">{t("home")}</NavigationLink>
           <NavigationLink href="/path">{t("path")}</NavigationLink>
         </div>
         <LocaleSwitcher />
+        <ThemeSwitcher />
       </nav>
     </div>
   );

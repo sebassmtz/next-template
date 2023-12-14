@@ -1,0 +1,30 @@
+.external_link {
+  display: inline-block;
+  border-radius: 0.375rem;
+  border: 1px solid var(--border-color);
+  padding: 2rem;
+  transition: border-color 0.3s;
+  text-decoration: none;
+}
+
+.external_link:hover {
+  border-color: var(--text-secondary);
+}
+
+.text {
+  font-size: 1.875rem;
+  font-weight: 600;
+  color: var(--text);
+}
+
+.description {
+  margin-top: 1.5rem;
+  font-size: 1.125rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
+
+.span {
+  margin-left: 0.5rem;
+  display: inline-block;
+}

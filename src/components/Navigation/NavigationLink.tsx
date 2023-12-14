@@ -5,6 +5,8 @@ import { ComponentProps } from "react";
 import type { AppPathnames } from "../../i18n-config";
 import { Link } from "../../i18n-navigation";
 
+import styles from "./style.module.css";
+
 export default function NavigationLink<Pathname extends AppPathnames>({
   href,
   ...rest
@@ -14,6 +16,8 @@ export default function NavigationLink<Pathname extends AppPathnames>({
   const isActive = pathname === href;
 
   return (
-    <Link aria-current={isActive ? "page" : undefined} href={href} {...rest} />
+    <Link
+   className={styles.link}
+     aria-current={isActive ? "page" : undefined} href={href} {...rest} />
   );
 }

@@ -1,0 +1,36 @@
+.visuallyhidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.customInput {
+  display: inline-flex;
+  appearance: none;
+  background-color: transparent;
+  padding-top: 0.75rem; /* Equivalente a py-3 */
+  padding-left: 0.5rem; /* Equivalente a pl-2 */
+  padding-right: 1.5rem; /* Equivalente a pr-6 */
+}
+
+.dropdownIcon {
+  pointer-events: none;
+  position: absolute;
+  right: 0.5rem; /* Equivalente a right-2 */
+  top: 8px; /* Equivalente a top-[8px] */
+}
+
+.label {
+  position: relative;
+  color: var(--text-secondary); /* Texto gris por defecto */
+  transition: opacity 0.2s;
+}
+
+.label[disabled="disabled"] {
+  opacity: 0.3; /* Aplicar opacidad si está deshabilitado */
+}

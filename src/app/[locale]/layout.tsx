@@ -7,6 +7,7 @@ import "../globals.css";
 
 import Providers from "./Providers";
 import Navigation from "@/components/Navigation/Navigation";
+import PageLayout from "@/components/PageLayout/PageLayout";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -42,8 +43,12 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
+        <Providers>
         <Navigation />
-        <Providers>{children}</Providers>
+          <PageLayout>
+          {children}
+          </PageLayout>
+          </Providers>
       </body>
     </html>
   );

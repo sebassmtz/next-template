@@ -1,0 +1,22 @@
+.container {
+  background-color: var(--background);
+}
+
+.navigation {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+  color: var(--text);
+}
+
+.link {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+  color: var(--text);
+}
+
+.link:hover {
+  color: var(--text-secondary);
+}
