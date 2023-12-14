@@ -23,7 +23,6 @@ export default function IndexPage({params: {locale}}: Props) {
   return (
     <div>
       <ThemeSwitcher />
-      <LocaleSwitcher />
        <p>
         {t.rich('description', {
           code: (chunks) => (

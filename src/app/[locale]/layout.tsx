@@ -6,6 +6,7 @@ import { locales } from "../../i18n-config";
 import "../globals.css";
 
 import Providers from "./Providers";
+import Navigation from "@/components/Navigation/Navigation";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -41,6 +42,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body>
+        <Navigation />
         <Providers>{children}</Providers>
       </body>
     </html>
