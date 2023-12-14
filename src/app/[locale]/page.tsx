@@ -30,6 +30,6 @@ export default function IndexPage({params: {locale}}: Props) {
           )
         })}
       </p>
-    </div>
+    </div> 
   );
 }
