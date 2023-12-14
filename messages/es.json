@@ -1,0 +1,29 @@
+{
+  "IndexPage": {
+    "title": "next-intl ejemplo",
+    "description": "Esto es un basico ejemplo del uso uuw"
+  },
+  "PathnamesPage": {
+    "title": "Ruta",
+    "description": "Esto es una ruta"
+  },
+  "LocaleLayout": {
+    "title": "Mi Portafolio"
+  },
+  "LocaleSwitcher": {
+    "label": "Cambio de Idioma",
+    "locale": "{locale, select, es {Espanol} en {Ingles} other {Unknown}}"
+  },
+  "Navigation": {
+    "home": "Casa",
+    "path": "Ruta"
+  },
+  "Error": {
+    "title": "¡Algo salió mal!",
+    "description": "<p>Lamentablemente hemos encontrado un error.</p><p>Tu puedes  <retry>recargar la pagina</retry> que estabas visitand.</p>"
+  },
+  "NotFoundPage": {
+    "title": "Página no encontrada",
+    "description": "Vuelva a verificar la barra de direcciones del navegador o utilice la navegación para ir a una página conocida."
+  }
+}

@@ -1,9 +1,6 @@
-import styles from './page.module.css'
+import {redirect} from 'next/navigation';
 
-export default function Home() {
-  return (
-    <div>
-      Home
-    </div>
-  )
+// This page only renders when the app is built statically (output: 'export')
+export default function RootPage() {
+  redirect('/en');
 }

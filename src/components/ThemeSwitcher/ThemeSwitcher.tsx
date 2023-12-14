@@ -5,6 +5,8 @@ import { useEffect } from 'react';
 export default function ThemeSwitcher() {
   const { resolvedTheme, setTheme } = useTheme();
 
+  console.log(resolvedTheme);
+
   useEffect(() => {
     const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches;
 

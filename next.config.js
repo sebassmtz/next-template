@@ -1,4 +1,11 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {}
+// @ts-check
 
-module.exports = nextConfig
+const withNextIntl = require('next-intl/plugin')();
+
+/** @type {import('next').NextConfig} */
+const config = {
+  reactStrictMode: true,
+  swcMinify: true,
+};
+
+module.exports = withNextIntl(config);

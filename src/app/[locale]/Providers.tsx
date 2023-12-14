@@ -2,7 +2,6 @@
 
 import { ReactNode } from "react";
 import { ThemeProvider } from "next-themes";
-import ThemeSwitcher from "@/components/ThemeSwitcher/ThemeSwitcher";
 
 interface PageProps {
   children: ReactNode;
@@ -11,7 +10,6 @@ interface PageProps {
 export default function Providers({ children }: PageProps) {
   return (
     <ThemeProvider>
-      <ThemeSwitcher />
       {children}
     </ThemeProvider>
   );
