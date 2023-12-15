@@ -3,24 +3,24 @@
     "title": "Plantilla Next.js con next-intl",
     "links": {
       "docs": {
-        "title": "Docs",
-        "description": "Learn more about next-intl in the official docs.",
+        "title": "Documentacion",
+        "description": "Aprende más sobre next-intl en la documentación oficial.",
         "href": "https://next-intl-docs.vercel.app/"
       },
       "source": {
-        "title": "Source code",
-        "description": "Browse the source code of this example on GitHub.",
-        "href": "https://github.com/amannn/next-intl/tree/main/examples/example-app-router"
+        "title": "Codigo fuente",
+        "description": "Explora el código fuente de este ejemplo en GitHub.",
+        "href": "https://github.com/sebassmtz/next-template"
       }
     }
   },
   "IndexPage": {
-    "title": "next-intl ejemplo",
-    "description": "Esto es un basico ejemplo del uso uuw"
+    "title": "Plantilla de ejemplo con Next.js",
+    "description": "Este es un ejemplo básico que demuestra el uso de next-intl y <code>next-theme</code> con Next.js App Router. Intente cambiar la configuración regional en la esquina superior derecha y vea cómo cambia el contenido. También cambie el tema en la parte superior derecha y observe cómo cambia el tema."
   },
   "PathnamesPage": {
     "title": "Ruta",
-    "description": "Esto es una ruta"
+    "description": "<p>Los nombres de ruta también están internacionalizados.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/path</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a español, la URL se localiza en consecuencia (<code>/es/ruta</code>).</p>"
   },
   "LocaleLayout": {
     "title": "Mi Portafolio"
