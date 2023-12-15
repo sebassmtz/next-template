@@ -23,7 +23,7 @@
     "description": "<p>The pathnames are internationalized too.</p><p>If you're using the default language English, you'll see <code>/en/path</code> in the browser address bar on this page.</p><p>If you change the locale to Spanish, the URL is localized accordingly (<code>/de/ruta</code>).</p>"
   },
   "LocaleLayout": {
-    "title": "My Portfolio"
+    "title": "Next Template"
   },
   "LocaleSwitcher": {
     "label": "Change language",

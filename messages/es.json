@@ -23,7 +23,7 @@
     "description": "<p>Los nombres de ruta también están internacionalizados.</p><p>Si estás usando el idioma predeterminado inglés, verás <code>/en/path</code> en la barra de direcciones del navegador en esta página.</p><p>Si cambias la configuración regional a español, la URL se localiza en consecuencia (<code>/es/ruta</code>).</p>"
   },
   "LocaleLayout": {
-    "title": "Mi Portafolio"
+    "title": "Plantilla Next"
   },
   "LocaleSwitcher": {
     "label": "Cambio de Idioma",
